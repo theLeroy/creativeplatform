@@ -1,0 +1,54 @@
+/* BASIC STUFF */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
+}
+
+.clearfix {
+  content: ".";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0px;
+}
+
+.transition {
+  transition: easy-in-out 0.4s;
+}
+
+/*
+Evenement-blue: #;
+
+Evenement-magenta: #;
+
+Evenement-green: #;
+*/
+
+/* TYPOGRAPHY */
+
+p {
+
+}
+
+a {
+
+}
+
+h1 {
+  font-size: bold;
+  font-size: 2em;
+  padding: 0.8em 0;
+}
+
+h2 {
+  font-size: medium;
+  font-size: 1.5em;
+  padding: 0.5em 0;
+}
+
+h3 {
+  font-size: medium;
+}
