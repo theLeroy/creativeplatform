@@ -6,7 +6,7 @@ session_start();
     How to call debug function:
     debug($debuger_On_or_Of, "Costom report text");
  */
-$debuger_On_or_Of = false;
+$debuger_On_or_Of = true;
 $devmode_On_or_Of = true;
 if ($devmode_On_or_Of) {
   ini_set('display_errors', 'On'); ini_set('html_errors', 0); error_reporting(-1);
@@ -15,7 +15,7 @@ if ($devmode_On_or_Of) {
   $url = "localhost:8888";
   $user = 'root';
   $password = 'root';
-  $db = '????';
+  $db = 'baeraefaeu';
   $host = 'localhost';
   $port = 8889;
   $link = mysqli_init();
@@ -49,4 +49,11 @@ $url = "https://" . $_SERVER['SERVER_NAME'];
 if ($devmode_On_or_Of) {
   $url = "http://localhost:8888";
 }
+
+function footer() {
+  require_once(getHomeURI('/components/footer.php'));
+}
+// function header() {
+//   require_once(getHomeURI('/components/header.php'));
+// }
 ?>

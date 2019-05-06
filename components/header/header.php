@@ -20,3 +20,7 @@
     top: 0;
   }
 </style>
+
+<script type="text/javascript">
+  alert()
+</script>
