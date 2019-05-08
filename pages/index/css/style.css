@@ -19,12 +19,13 @@
   transition: easy-in-out 0.4s;
 }
 
+/*COLORS*/
 /*
-Evenement-blue: #;
+Evenement-blue: rgba(0, 159, 227, 1);
 
-Evenement-magenta: #;
+Evenement-magenta: rgba(230, 0, 126, 1);
 
-Evenement-green: #;
+Evenement-green: rgba(63, 165, 53);
 */
 
 /* TYPOGRAPHY */
@@ -35,6 +36,10 @@ p {
 
 a {
 
+}
+
+a:hover {
+  color: rgba(0, 159, 227, 1);
 }
 
 h1 {
