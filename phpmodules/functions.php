@@ -50,10 +50,10 @@ if ($devmode_On_or_Of) {
   $url = "http://localhost:8888";
 }
 
-function footer() {
-  require_once(getHomeURI('/components/footer.php'));
-}
+// function footer() {
+//   require_once(getHomeURI('components/footer/footer.php'));
+// }
 // function header() {
-//   require_once(getHomeURI('/components/header.php'));
+//   require_once(getHomeURI('components/header/header.php'));
 // }
 ?>
