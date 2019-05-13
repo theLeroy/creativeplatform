@@ -1,6 +1,0 @@
-<?php
-// Tabellen erstellen
-
-xx
-
- ?>
