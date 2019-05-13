@@ -1,4 +1,5 @@
 <?php
+require_once('pw.php');
 //<!-- das file isch überau ibudnde und managet aui wichtige zuegriffe. -->
 //Session
 session_start();
@@ -12,12 +13,12 @@ if ($devmode_On_or_Of) {
   ini_set('display_errors', 'On'); ini_set('html_errors', 0); error_reporting(-1);
   $_SERVER['ORIG_PATH_INFO'] = $_SERVER['REQUEST_URI'];
   // $mysqli = mysqli_connect('localhost:8888', 'root', 'root', 'baeraefaeu') or die('Keine Verbindung zur Datenbank oder keine Datenbank ausgewählt');
-  $url = "localhost:8888";
-  $user = 'root';
-  $password = 'root';
+  $url = "mdm2016.bbz.cloud";
+  $user = $databaseuser;
+  $password = $databasepw;
   $db = 'baeraefaeu';
   $host = 'localhost';
-  $port = 8889;
+  $port = 21;
   $link = mysqli_init();
   $success = mysqli_real_connect(
      $link,
