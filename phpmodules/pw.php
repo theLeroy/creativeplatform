@@ -1,4 +1,4 @@
 <?php
-$databasepw = 'donotCommit!'
-$databaseuser = 'donotCommit!'
+$databasepw = 'donotCommit!';
+$databaseuser = 'donotCommit!';
  ?>
