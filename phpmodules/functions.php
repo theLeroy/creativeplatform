@@ -2,7 +2,7 @@
 include_once "autoload.php";
 //<!-- das file isch überau ibudnde und managet aui wichtige zuegriffe. -->
 //Session
-echo('env: ' . env('PHP_ENV') . '<br>');
+// echo('env: ' . env('PHP_ENV') . '<br>');
 session_start();
 /* Error Reporting on or off
     How to call debug function:
@@ -13,8 +13,8 @@ if (env('PHP_ENV') == 'debug') {
   $_SERVER['ORIG_PATH_INFO'] = $_SERVER['REQUEST_URI'];
   // $mysqli = mysqli_connect('localhost:8888', 'root', 'root', 'baeraefaeu') or die('Keine Verbindung zur Datenbank oder keine Datenbank ausgewählt');
   $url = "mdm2016.bbz.cloud";
-  $user = $databaseuser;
-  $password = $databasepw;
+  $user = env("DB_USERNAME");
+  $password = env("DB_PASSWORD");
   $db = 'baeraefaeu';
   $host = 'localhost';
   $port = 21;
@@ -50,6 +50,9 @@ $url = "https://" . $_SERVER['SERVER_NAME'];
 if (env('PHP_ENV') == 'debug') {
   $url = "http://localhost:8888";
 }
+
+// include css
+// echo '<link href="'.$url.'/libs/reset.css" rel="stylesheet" type="text/css">';
 
 // function footer() {
 //   require_once(getHomeURI('components/footer/footer.php'));
