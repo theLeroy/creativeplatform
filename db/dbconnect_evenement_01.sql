@@ -1,1 +1,2 @@
-CREATE DATABASE IF NOT EXISTS d_evenement;
+DROP DATABASE IF EXISTS d_evenement;
+CREATE DATABASE d_evenement;

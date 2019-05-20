@@ -1,5 +1,5 @@
 // Datenbank erstellen
-Zur korrekten Erstellung/Implementierung der Datenbank wurden drei seperate Files erstellt. Diese werden in nummerierter Abfolge ausgeführt.
+Zur korrekten Erstellung/Implementierung der Datenbank wurden drei seperate Files erstellt. Diese müssen in nummerierter Abfolge ausgeführt werden.
 
 - dbconnect_evenement_01: Erstellung der DB
 - Zum Fortfahren muss man sich nun auf die DB verbinden
