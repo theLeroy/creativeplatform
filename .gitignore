@@ -2,8 +2,6 @@
 .DS_Store
 node_modules
 /dist
-/phpmodules/pw.php
-phpmodules/pw.php
 
 /tests/e2e/reports/
 selenium-debug.log
@@ -28,5 +26,6 @@ yarn-error.log*
 
 #Package lock json File
 package-lock.json
-phpmodules/pw.php
-phpmodules/pw.php
+
+.env.php
+phpmodules/.env.php
