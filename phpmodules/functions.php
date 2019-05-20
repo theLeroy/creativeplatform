@@ -1,15 +1,14 @@
 <?php
-require_once('pw.php');
+include_once "autoload.php";
 //<!-- das file isch überau ibudnde und managet aui wichtige zuegriffe. -->
 //Session
+echo('env: ' . env('PHP_ENV') . '<br>');
 session_start();
 /* Error Reporting on or off
     How to call debug function:
     debug($debuger_On_or_Of, "Costom report text");
  */
-$debuger_On_or_Of = true;
-$devmode_On_or_Of = true;
-if ($devmode_On_or_Of) {
+if (env('PHP_ENV') == 'debug') {
   ini_set('display_errors', 'On'); ini_set('html_errors', 0); error_reporting(-1);
   $_SERVER['ORIG_PATH_INFO'] = $_SERVER['REQUEST_URI'];
   // $mysqli = mysqli_connect('localhost:8888', 'root', 'root', 'baeraefaeu') or die('Keine Verbindung zur Datenbank oder keine Datenbank ausgewählt');
@@ -28,12 +27,13 @@ if ($devmode_On_or_Of) {
      $db,
      $port
   );
-  }
+}
 /* Get Path of Root Directory */
 if(!function_exists('getHomeURI')) {
   function getHomeURI($path) {
     $dots = '';
-    $out = $_SERVER['ORIG_PATH_INFO'];
+    // $out = $_SERVER['ORIG_PATH_INFO'];
+    $out = '';//$_SERVER['ORIG_PATH_INFO'];
     $matches = explode("/",$out);
     for($i = 1; $i <= count($matches)-2;$i++) {
       $dots .= '../';
@@ -47,7 +47,7 @@ example:
 <a href="<?php echo $url ?>/Pages/AGB" style="text-decoration: none;">
 */
 $url = "https://" . $_SERVER['SERVER_NAME'];
-if ($devmode_On_or_Of) {
+if (env('PHP_ENV') == 'debug') {
   $url = "http://localhost:8888";
 }
 
