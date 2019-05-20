@@ -1,17 +1,20 @@
 <!DOCTYPE html>
   <html lang="de">
-      <meta charset="'.$hederjson['Meta']['UTF'].'">
-      <meta name="description" content="'.$hederjson['Meta']['Description'].'">
-      <meta name="keywords" content="'.$hederjson['Meta']['keywords'].'">
-      <meta name="author" content="'.$hederjson['Meta']['Autor'].'">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
-      <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
-      <meta name="apple-mobile-web-app-status-bar-style" content="white">
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="viewport" content="width=device-width, minimal-ui">
+  <head>
+    <meta charset="'.$hederjson['Meta']['UTF'].'">
+    <meta name="description" content="Deine Platform um Events zu organisiern">
+    <meta name="keywords" content="Organisieren, Platform, Events, Evenements">
+    <meta name="author" content="Evenements">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, minimal-ui">
+    <title>Evenements</title>
+    <link href="<?php $url ?>/libs/reset.css" rel="stylesheet" type="text/css">
 
-      <link href="<?php $url ?>/libs/reset.css" rel="stylesheet" type="text/css">
+  </head>
   <header class="mainheader">
     <div class="headerlogo">
       <img id="headerImage" src="<?php $url ?>/media/Icon/Logo.svg" alt="">
