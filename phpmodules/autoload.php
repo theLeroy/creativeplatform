@@ -1,5 +1,5 @@
 <?php
-  echo('env: ' . nested_loading('.env.php'));
+  echo('env: ' . nested_including('.env.php'));
   if(!function_exists('env')) {
       function env($key, $default = null)
       {

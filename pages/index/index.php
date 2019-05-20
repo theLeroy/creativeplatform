@@ -1,6 +1,6 @@
 <?php
 //Immer includen
-function nested_loading($filename, $max_nesting = 7) {
+function nested_including($filename, $max_nesting = 7) {
   $nesting = 0;
   $rel_path = './';
   while($nesting < $max_nesting) {
@@ -14,7 +14,7 @@ function nested_loading($filename, $max_nesting = 7) {
   }
   return false;
 }
-nested_loading('phpmodules/functions.php');
+nested_including('phpmodules/functions.php');
 require_once(getHomeURI('phpmodules/functions.php'));
 //test if included
 // if (!function_exists('FunctionVerifier')) {
