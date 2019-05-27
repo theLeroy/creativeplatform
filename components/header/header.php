@@ -13,6 +13,8 @@
     <meta name="viewport" content="width=device-width, minimal-ui">
     <title>Evenements</title>
     <link href="<?php $url ?>/libs/reset.css" rel="stylesheet" type="text/css">
+    <link href="<?php $url ?>/libs/costom.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
 
   </head>
   <header class="mainheader">
