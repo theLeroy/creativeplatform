@@ -2,5 +2,59 @@ label {
   font-size: 20px;
   color: #000000;
   font-weight: 500;
-  
+  margin-left: 80px;
+  line-height: 3;
+  width: 250px;
+  display: inline-block;
+}
+input {
+  min-width: 300px;
+}
+#beschrieb {
+  width: 500px;
+  height: 80px;
+  vertical-align: text-top;
+}
+
+input[type="file"] {
+  width: calc(100% - (80px * 2));
+  margin-left: 80px;
+  height: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+.neededperscontainer {
+  margin-left: 80px;
+}
+.neededpers {
+  background: rgba(230, 0, 227, 0.5);
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 10px;
+  width: 300px;
+  height: 100px;
+}
+.neededpers > .neededpers_titl {
+  font-weight: bold;
+}
+.neededpers > .neededpers_Search, .neededpers_pay {
+  color: #fff;
+  display: block;
+  position: absolute;
+}
+.plus {
+  display: inline-block;
+  margin-bottom: 47px;
+}
+.plus > span {
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  background: black;
+}
+.plus > span:first-of-type {
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+
 }

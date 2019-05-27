@@ -25,16 +25,31 @@ nested_including('phpmodules/functions.php');
  ?>
 
  <form class="form" action="" method="post">
-  <input type="file" name="Bild" value="">
-  <label for="titel">titel</label>
-  <input type="text" name="titel" value="">
+  <input type="file" name="Bild" value=""> <br>
+  <label for="titel">Titel</label>
+  <input type="text" name="titel" value=""> <br>
   <label for="datum">Datum</label>
-  <input type="date" name="datum" value="">
+  <input type="date" name="datum" value=""> <br>
   <label for="zeit">Zeit</label>
-  <input type="date" name="zeit" value="">
+  <input type="time" name="zeit" value=""> <br>
   <label for="teaser">Teaser</label>
-  <input type="text" name="teaser" value="">
+  <input type="text" name="teaser" value=""> <br>
   <label for="beschrieb">Beschrieb</label>
-  <input type="text" name="beschrieb" value="">
+<textarea id="beschrieb" name="beschrieb"></textarea><br>
+<label>Diese Leute brauchen wir:</label> <br>
+<div class="neededperscontainer">
+  <div class="neededpers">
+<p class="neededpers_Search"><span class=neededpers_titl>Wir suchen:</span> Grafiker</p>
+<p class="neededpers_pay"><span class=neededpers_titl>Wir bieten</span> 20.- pro std.</p>
+  </div>
+  <div class="neededpers">
 
+  </div>
+    <div class="plus">
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<span class="block"></span>
+<label>Diese Objekte brauchen wir:</label>
  </form>
