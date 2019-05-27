@@ -17,7 +17,8 @@ CREATE TABLE projects (
   id SERIAL PRIMARY KEY,
   timestamp DATETIME,
   name VARCHAR(255) NOT NULL,
-  description TEXT NOT NULL
+  description TEXT NOT NULL,
+  teaser TEXT NOT NULL
 );
 
 CREATE TABLE publish (
