@@ -22,6 +22,7 @@ nested_including('phpmodules/functions.php');
 // }
 
   nested_including('components/header/header.php');
+  nested_including('components/neededcontainer/neededcontainer.php');
  ?>
 
  <form class="form" action="" method="post">
@@ -38,18 +39,26 @@ nested_including('phpmodules/functions.php');
 <textarea id="beschrieb" name="beschrieb"></textarea><br>
 <label>Diese Leute brauchen wir:</label> <br>
 <div class="neededperscontainer">
-  <div class="neededpers">
-<p class="neededpers_Search"><span class=neededpers_titl>Wir suchen:</span> Grafiker</p>
-<p class="neededpers_pay"><span class=neededpers_titl>Wir bieten</span> 20.- pro std.</p>
-  </div>
-  <div class="neededpers">
-
-  </div>
+  <?php neededcontainer() ?>
+  <?php neededcontainer() ?>
+  <?php neededcontainer() ?>
+  <?php neededcontainer() ?>
     <div class="plus">
-    <span></span>
-    <span></span>
-  </div>
+      <span></span>
+      <span></span>
+    </div>
 </div>
 <span class="block"></span>
 <label>Diese Objekte brauchen wir:</label>
+<div class="neededperscontainer">
+  <?php neededcontainer() ?>
+  <?php neededcontainer() ?>
+  <?php neededcontainer() ?>
+  <?php neededcontainer() ?>
+    <div class="plus">
+      <span></span>
+      <span></span>
+    </div>
+</div>
+
  </form>
