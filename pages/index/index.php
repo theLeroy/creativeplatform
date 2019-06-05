@@ -23,8 +23,9 @@ nested_including('phpmodules/functions.php');
 
   nested_including('components/header/header.php');
  ?>
-z
-<h1>alds</h1>
+
+<?php nested_including('components/events/events.php');   ?>
+
 <?php
   nested_including('components/footer/footer.php');
  ?>
