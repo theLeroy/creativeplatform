@@ -22,4 +22,8 @@ Login <-- Als Benutzer anmelden
 Projekt erstellen <-- neues Projekt erstellen
 **// Funktionen**  
 
+
 **// Dateistruktur**  
+Components -> Einzelne Kompononenten des Codes die man auf den verschiedenen Seiten immer wieder verwenden kann.
+DB -> Files für den Datenbank Aufbau.
+libs -> Librarys aus dem Internet bspw. für das CSS reset, damit dieses keine fehler beinhaltet.
