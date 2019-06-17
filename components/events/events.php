@@ -2,7 +2,9 @@
 function Cevent($key, $value) {
   echo '<div class="event">
           <div class="eventbild">
-            <img src="/media/Bilder/events/event_id_jh123lhj123/mainimg.jpg" alt="">
+            <img src="/media/Bilder/events/event_id_';
+            print_r($value['id']);
+            echo '/mainimg.jpg" alt="">
           </div>
           <div class="eventtextcontainer">
             <h1 class="eventtitel">
