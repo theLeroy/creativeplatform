@@ -15,17 +15,17 @@ function nested_including($filename, $max_nesting = 7) {
   return false;
 }
 nested_including('phpmodules/functions.php');
-// require_once(getHomeURI('phpmodules/functions.php'));
-//test if included
-// if (!function_exists('FunctionVerifier')) {
-//   exit;
-// }
+// test if included
 
-  nested_including('components/header/header.php');
- ?>
+nested_including('components/header/header.php');
 
-<?php nested_including('components/events/events.php');   ?>
+// ---
 
-<?php
+nested_including('phpmodules/getProjects.php');
+
+nested_including('components/events/events.php');
+
+
+//footer
   nested_including('components/footer/footer.php');
  ?>

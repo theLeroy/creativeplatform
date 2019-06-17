@@ -1,6 +1,6 @@
 <?php
 function Cevent() {
-  echo '    <div class="event">
+  echo '<div class="event">
           <div class="eventbild">
             <img src="/media/Bilder/events/event_id_jh123lhj123/mainimg.jpg" alt="">
           </div>

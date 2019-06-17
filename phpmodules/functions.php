@@ -15,11 +15,27 @@ if (env('PHP_ENV') == 'debug') {
   $url = "mdm2016.bbz.cloud";
   $user = env("DB_USERNAME");
   $password = env("DB_PASSWORD");
-  $db = 'baeraefaeu';
-  $host = 'localhost';
+  $db = env("DB_NAME");
+  $host = env("DB_HOST");
   $port = 21;
   $link = mysqli_init();
-  $success = mysqli_real_connect(
+  $conn = mysqli_real_connect(
+     $link,
+     $host,
+     $user,
+     $password,
+     $db,
+     $port
+  );
+} else {
+  $url = "mdm2016.bbz.cloud";
+  $user = env("DB_USERNAME");
+  $password = env("DB_PASSWORD");
+  $db = env("DB_NAME");
+  $host = env("DB_HOST");
+  $port = 21;
+  $link = mysqli_init();
+  $conn = mysqli_real_connect(
      $link,
      $host,
      $user,
