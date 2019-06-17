@@ -11,7 +11,9 @@ function Cevent($key, $value) {
             echo '
             </h1>
             <div class="ersteller">
-              von: Max Muster
+              von: ';
+              print_r($value['username']);
+              echo '
             </div>
             <h2>Teaser</h2>
             <div class="eventTeaser">
