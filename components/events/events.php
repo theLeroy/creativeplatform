@@ -5,13 +5,19 @@ function Cevent($key, $value) {
             <img src="/media/Bilder/events/event_id_jh123lhj123/mainimg.jpg" alt="">
           </div>
           <div class="eventtextcontainer">
-            <h1 class="eventtitel">Malfest</h1>
+            <h1 class="eventtitel">
+            ';
+            print_r($value['name']);
+            echo '
+            </h1>
             <div class="ersteller">
               von: Max Muster
             </div>
             <h2>Teaser</h2>
             <div class="eventTeaser">
-            sd
+            ';
+            print_r($value['teaser']);
+            echo '
             </div>
         </div>
       </div>
@@ -26,33 +32,36 @@ function Cevent($key, $value) {
     $index = 0;
     foreach ($prow as $key=>$value) {
       if ($index % 3 == 0) {
-        echo $key;
-        echo $value;
+
         Cevent($key, $value);
       }
       $index++;
     }
-
       ?>
-
-
-    <?php Cevent() ?>
-    <?php Cevent() ?>
-    <?php Cevent() ?>
-    <?php Cevent() ?>
   </div>
   <div class="eventsspalte">
-    <?php Cevent() ?>
-    <?php Cevent() ?>
-    <?php Cevent() ?>
-    <?php Cevent() ?>
+    <?php
+    $index = 0;
+    foreach ($prow as $key=>$value) {
+      if ($index % 3 == 1) {
 
+        Cevent($key, $value);
+      }
+      $index++;
+    }
+      ?>
   </div>
   <div class="eventsspalte">
-    <?php Cevent() ?>
-    <?php Cevent() ?>
-    <?php Cevent() ?>
-    <?php Cevent() ?>
+    <?php
+    $index = 0;
+    foreach ($prow as $key=>$value) {
+      if ($index % 3 == 2) {
+
+        Cevent($key, $value);
+      }
+      $index++;
+    }
+      ?>
 
   </div>
 </div>
