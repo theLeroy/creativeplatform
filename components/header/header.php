@@ -25,7 +25,7 @@
       add
     </div>
     <div class="headeruserpicture">
-      userpicture
+      <img src="/media/Bilder/users/user_id_1/mainimg.jpg" class="" alt="">
     </div>
   </header>
 
@@ -46,7 +46,6 @@
     .headerlogo {
       height: 100px;
       width: 150px;
-
       display: inline-block;
       padding-top: 30px;
       box-sizing: border-box;
@@ -63,5 +62,17 @@
     .headeruserpicture {
       display: inline-block;
       float: right;
+      height: 50px;
+      width: 50px;
+      margin-top: 25px;
+    }
+    .headeruserpicture > img {
+      background-size: cover;
+      border-radius: 100%;
+      width: 100%;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      object-fit: cover;
     }
   </style>
