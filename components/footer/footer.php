@@ -16,17 +16,24 @@
       <p>Switzerland</p>
     </article>
     <article class="contact">
-      <a href="mailto:info@evenement.ch">info@evenement.ch</a>
-      <a href="tel:+41011212232">+41 01 121 22 32</a>
+      <a href="mailto:info@evenement.ch">info@evenement.ch</a><br>
+      <a href="tel:+41011212232">+41 01 121 22 32</a><br><br>
     </article>
   </section>
 </footer>
 </html>
 <style media="screen">
   footer {
-    bottom: 0;
+    height: 200px;
+    margin-top: 80px;
+    /* bottom: 0; */
     position: absolute;
     padding-left: 80px;
     padding-right: 80px;
+    color: rgb(70, 70, 70);
+    line-height: 1.4;
+  }
+  footer a {
+    color: rgb(119, 119, 119);
   }
 </style>

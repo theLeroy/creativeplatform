@@ -26,22 +26,7 @@ input[type="file"] {
 }
 .neededperscontainer {
   margin-left: 80px;
-}
-.neededpers {
-  background: rgba(230, 0, 227, 0.5);
-  border-radius: 4px;
-  display: inline-block;
-  margin-right: 10px;
-  width: 300px;
-  height: 100px;
-}
-.neededpers > .neededpers_titl {
-  font-weight: bold;
-}
-.neededpers > .neededpers_Search, .neededpers_pay {
-  color: #fff;
-  display: block;
-  position: absolute;
+  overflow-x: scroll;
 }
 .plus {
   display: inline-block;
