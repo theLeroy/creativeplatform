@@ -1,5 +1,5 @@
 <?php
-function Cevent() {
+function Cevent($key, $value) {
   echo '<div class="event">
           <div class="eventbild">
             <img src="/media/Bilder/events/event_id_jh123lhj123/mainimg.jpg" alt="">
@@ -11,7 +11,7 @@ function Cevent() {
             </div>
             <h2>Teaser</h2>
             <div class="eventTeaser">
-            Projektbeschrieb welcher das Projekt sehr intensiv beschreibt. Projektbeschrieb ja genau welcher das Projekt sehr intensiv beschreibt.
+            sd
             </div>
         </div>
       </div>
@@ -21,6 +21,21 @@ function Cevent() {
 
 <div data-v-b2f2b4f0 class="eventscontaiener">
   <div class="eventsspalte">
+
+    <?php
+    $index = 0;
+    foreach ($prow as $key=>$value) {
+      if ($index % 3 == 0) {
+        echo $key;
+        echo $value;
+        Cevent($key, $value);
+      }
+      $index++;
+    }
+
+      ?>
+
+
     <?php Cevent() ?>
     <?php Cevent() ?>
     <?php Cevent() ?>

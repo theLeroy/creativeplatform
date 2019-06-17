@@ -19,9 +19,8 @@ if (env('PHP_ENV') == 'debug') {
   $host = env("DB_HOST");
   $port = 21;
   $link = mysqli_init();
-  $conn = mysqli_real_connect(
-     $link,
-     $host,
+  $conn = mysqli_connect(
+     $url,
      $user,
      $password,
      $db,
@@ -35,9 +34,8 @@ if (env('PHP_ENV') == 'debug') {
   $host = env("DB_HOST");
   $port = 21;
   $link = mysqli_init();
-  $conn = mysqli_real_connect(
-     $link,
-     $host,
+  $conn = mysqli_connect(
+     $url,
      $user,
      $password,
      $db,
