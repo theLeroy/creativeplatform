@@ -62,7 +62,7 @@ example:
 */
 $url = "https://" . $_SERVER['SERVER_NAME'];
 if (env('PHP_ENV') == 'debug') {
-  $url = "http://localhost:8888";
+  $url = "http://localhost:8888/creativeplatform";
 }
 
 // include css
