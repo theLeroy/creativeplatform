@@ -1,6 +1,9 @@
 <?php
 function Cevent($key, $value) {
   echo '<div class="event">
+          <a href="/pages/project/?id=';
+          print_r($value['id']);
+          echo '">
           <div class="eventbild">
             <img src="/media/Bilder/events/event_id_';
             print_r($value['id']);
@@ -24,11 +27,11 @@ function Cevent($key, $value) {
             echo '
             </div>
         </div>
+        </a>
       </div>
 ';
 }
  ?>
-
 <div data-v-b2f2b4f0 class="eventscontaiener">
   <div class="eventsspalte">
 
@@ -77,6 +80,12 @@ function Cevent($key, $value) {
     padding-top: 50px;
     min-height: 110vh;
   }
+  .eventscontaiener[data-v-b2f2b4f0] a {
+    color: black;
+  }
+  .eventscontaiener[data-v-b2f2b4f0] a:hover {
+    color: black;
+  }
   .eventscontaiener[data-v-b2f2b4f0] .eventsspalte {
     width: 32.5%;
     display: inline-block;
@@ -86,6 +95,7 @@ function Cevent($key, $value) {
 
   .eventscontaiener[data-v-b2f2b4f0] .event {
     /* padding: calc(100vw / 3 - (5 * 2.5px)); */
+    cursor: pointer;
     width: 100%;
     margin-bottom: 15px;
     box-sizing: border-box;
