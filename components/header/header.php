@@ -16,6 +16,12 @@
     <link href="<?php $url ?>/libs/costom.css" rel="stylesheet" type="text/css">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/Icon/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/Icon/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/Icon/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/media/Icon/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <header class="mainheader">
     <a href="/">
