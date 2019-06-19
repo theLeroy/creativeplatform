@@ -43,10 +43,16 @@ $teaser = mysqli_real_escape_string($conn , $_POST["teaser"]);
 $beschrieb = mysqli_real_escape_string($conn , $_POST["beschrieb"]);
 
 
+
 $sql = "
 INSERT INTO projects (timestamp, name, description, teaser)
 VALUES ('".$datum." ".$zeit."', '".$titel."', '".$beschrieb."', '".$teaser."')
 ";
+mysqli_query($conn, $sql);
+
+$sql = "INSERT INTO publish (users_id, projects_id)
+VALUES ('2', (SELECT id FROM projects ORDER BY id DESC LIMIT 0, 1))";
+
 
 if (mysqli_query($conn, $sql)) {
   echo "<script>
