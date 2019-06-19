@@ -41,5 +41,14 @@
 }
 .beschreiung {
   margin-top: 35px;
+  margin-bottom: 30px;
+}
+.event input {
+  background: rgba(230, 0, 227, 0.5);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 150px;
+  color: white;
+  cursor: pointer;
 }
