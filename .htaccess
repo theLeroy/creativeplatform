@@ -2,3 +2,4 @@ RewriteEngine On
 
 
 RewriteRule ^/?$ $1/pages/index$2 [R=301,L]
+ErrorDocument 404 /pages/404/index.php
