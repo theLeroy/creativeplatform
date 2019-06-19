@@ -4,10 +4,10 @@
   </section>
   <section>
     <article class="links">
-      <a href="<?php $url ?>/home/">Home</a>
-      <a href="<?php $url ?>/impressum/">Impressum</a>
-      <a href="<?php $url ?>/login/">Login</a>
-      <a href="<?php $url ?>/newproject/">Projekt erstellen</a>
+      <a href="/">Home</a>
+      <a href="/impressum/">Impressum</a>
+      <a href="/login/">Login</a>
+      <a href="/pages/newproject/">Projekt erstellen</a>
     </article>
     <article class="address">
       <p>Evenement AG</p>

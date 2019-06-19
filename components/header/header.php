@@ -18,10 +18,11 @@
 
   </head>
   <header class="mainheader">
-
-    <div class="headerlogo">
-      <img id="headerImage" src="<?php $url ?>/media/Icon/Logo.svg" alt="">
-    </div>
+    <a href="/">
+      <div class="headerlogo">
+        <img id="headerImage" src="<?php $url ?>/media/Icon/Logo.svg" alt="">
+      </div>
+    </a>
     <div class="headeruserpicture">
       <img src="/media/Bilder/users/user_id_1/mainimg.jpg" class="" alt="">
     </div>
