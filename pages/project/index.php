@@ -65,8 +65,23 @@ if (mysqli_num_rows($result) > 0) {
      <div class="ersteller">
        von: <?php print_r($prow[0]['username']); ?>
      </div>
-     <h2>Teaser</h2>
      <div class="eventTeaser">
-       <?php print_r($prow[0]['username']); ?>
+        <h2>Teaser:</h2>
+       <?php print_r($prow[0]['teaser']); ?>
      </div>
+     <div class="beschreiung">
+       <h2>Beschreiung:</h2>
+       <div class="beschreibungtext">
+         <?php print_r($prow[0]['description']); ?>
+       </div>
+     </div>
+     <form method="post" action="download-ics.php">
+        <input type="hidden" name="date_start" value="<?php  print_r(date( "d.M.Y H:i", strtotime($prow[0]['timestamp']))) ?>">
+        <input type="hidden" name="date_end" value="<?php  print_r(date( "d.M.Y H:i", strtotime($prow[0]['timestamp'] + 10000))) ?>">
+        <input type="hidden" name="location" value="123 Fake St, New York, NY">
+        <input type="hidden" name="description" value="<?php print_r($prow[0]['description']); ?>">
+        <input type="hidden" name="summary" value="<?php print_r($prow[0]['teaser']); ?>">
+        <input type="hidden" name="url" value="<?php echo $url ?>">
+        <input type="submit" value="Add to Calendar">
+      </form>
  </div>
