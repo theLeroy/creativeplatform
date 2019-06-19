@@ -25,16 +25,16 @@ nested_including('phpmodules/functions.php');
   nested_including('components/neededcontainer/neededcontainer.php');
  ?>
 
- <form class="form" action="" method="post">
+ <form class="form" action="/pages/addprojecttodb/index.php" method="post">
   <input type="file" name="Bild" value=""> <br>
   <label for="titel">Titel</label>
-  <input type="text" name="titel" value=""> <br>
+  <input type="text" name="titel" required value=""> <br>
   <label for="datum">Datum</label>
-  <input type="date" name="datum" value=""> <br>
+  <input type="date" name="datum" required value=""> <br>
   <label for="zeit">Zeit</label>
-  <input type="time" name="zeit" value=""> <br>
+  <input type="time" name="zeit" required value=""> <br>
   <label for="teaser">Teaser</label>
-  <input type="text" name="teaser" value=""> <br>
+  <input type="text" name="teaser" required value=""> <br>
   <label for="beschrieb">Beschrieb</label>
 <textarea id="beschrieb" name="beschrieb"></textarea><br>
 <label>Diese Leute brauchen wir:</label> <br>

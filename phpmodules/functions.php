@@ -74,4 +74,5 @@ if (env('PHP_ENV') == 'debug') {
 // function header() {
 //   require_once(getHomeURI('components/header/header.php'));
 // }
+
 ?>
