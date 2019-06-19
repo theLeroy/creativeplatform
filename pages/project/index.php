@@ -32,7 +32,7 @@ $projectId = mysqli_real_escape_string($conn ,$_GET["id"]);
 
 $sql = "SELECT projects.*, publish.users_id, users.username FROM publish
 LEFT JOIN projects ON projects.id = publish.projects_id
-LEFT JOIN users ON users.id = publish.projects_id WHERE projects.id = ". $projectId ."";
+LEFT JOIN users ON users.id = publish.users_id WHERE projects.id = ". $projectId ."";
 $result = mysqli_query($conn, $sql);
 $i = -1;
 $prow = array();

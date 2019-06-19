@@ -87,6 +87,7 @@ function Cevent($key, $value) {
     color: black;
   }
   .eventscontaiener[data-v-b2f2b4f0] .eventsspalte {
+    vertical-align: top;
     width: 32.5%;
     display: inline-block;
     box-sizing: border-box;
@@ -97,7 +98,7 @@ function Cevent($key, $value) {
     /* padding: calc(100vw / 3 - (5 * 2.5px)); */
     cursor: pointer;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     box-sizing: border-box;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(94, 94, 94, 0.41);

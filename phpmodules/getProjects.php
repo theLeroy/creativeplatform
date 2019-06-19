@@ -1,7 +1,7 @@
 <?php
   $sql = "SELECT projects.*, publish.users_id, users.username FROM publish
 LEFT JOIN projects ON projects.id = publish.projects_id
-LEFT JOIN users ON users.id = publish.projects_id;";
+LEFT JOIN users ON users.id = publish.users_id ORDER By id DESC;";
   $result = mysqli_query($conn, $sql);
   $i = -1;
   $prow = array();
